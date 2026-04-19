@@ -25,6 +25,32 @@ Using CDC health indicator datasets, this project aims to map the relationship b
 - **Model Training**: Utilizing Random Forest to manage non-linear patterns in complex health data.
 - **Clinical Validation**: Evaluating performance via Confusion Matrices to minimize False Negatives in medical diagnoses.
 
+## ⚙️ Installation & Usage
+
+### 1. Prerequisites (Kaggle API)
+
+This project uses the CDC Diabetes Health Indicators dataset from Kaggle.
+
+  - Place your `kaggle.json` in the appropriate directory (`~/.kaggle/` or Colab Secrets).
+  - The notebook will handle the download of the [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset).
+
+### 2. Environment Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/Billy1205/diabetes-prediction.git
+cd diabetes-prediction
+
+# Install health-tech stack
+pip install -r requirements.txt
+```
+
+### 3. Execution
+
+1.  Open `notebooks/diabetes-prediction.ipynb`.
+2.  Run all cells to perform **SMOTE oversampling** and train the **Random Forest** model.
+3.  Use the built-in function `predict_diabetes_risk` to test the model with custom patient data.
+
 ***
 
 # 🏥 Diabetes Health Indicators Prediction
@@ -47,3 +73,27 @@ Menggunakan dataset indikator kesehatan dari CDC (Centers for Disease Control an
 - **Handling Imbalance**: Menerapkan SMOTE pada data training untuk menciptakan keseimbangan antar kelas target agar model tidak bias.
 - **Model Training**: Pelatihan model menggunakan Random Forest untuk menangani pola non-linear pada data kesehatan yang kompleks.
 - **Clinical Validation**: Evaluasi menggunakan Confusion Matrix untuk meminimalkan *False Negatives* pada diagnosa medis.
+
+## ⚙️ Instalasi & Penggunaan
+
+### 1. Prasyarat (Kaggle API)
+
+  - Pastikan kredensial Kaggle (`kaggle.json`) sudah siap untuk mengunduh dataset CDC secara otomatis.
+  - Proyek ini akan memakai dataset [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset).
+
+### 2. Persiapan Lingkungan
+
+```bash
+# Klon repositori
+git clone https://github.com/Billy1205/diabetes-prediction.git
+cd diabetes-prediction
+
+# Instal dependensi
+pip install -r requirements.txt
+```
+
+### 3. Menjalankan Prediksi
+
+1.  Buka notebook di folder `notebooks/`.
+2.  Jalankan semua sel untuk melakukan pemrosesan **SMOTE** dan melatih model.
+3.  Anda bisa mencoba fungsi `predict_diabetes_risk` untuk memasukkan data kesehatan baru dan melihat hasilnya secara instan.
